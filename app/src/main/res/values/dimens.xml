@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="top">55dp</dimen>
+    <dimen name="bottom">16dp</dimen>
+    <dimen name="left">10dp</dimen>
+    <dimen name="corner_radius_cardview">4dp</dimen>
+    <dimen name="elevacion_actionbar">4dp</dimen>
+    <dimen name="icono_padding">5dp</dimen>
+    <dimen name="margen_texto">5dp</dimen>
+    <dimen name="texto">20sp</dimen>
+    <dimen name="margen_general">15dp</dimen>
+</resources>
+
