@@ -42,5 +42,4 @@ public class FavoritasActivity extends AppCompatActivity {
         MascotaAdapter mascotaAdapter = new MascotaAdapter(mascotasFavoritas);
         rvMascotasFavoritas.setAdapter(mascotaAdapter);
     }
-    
 }
