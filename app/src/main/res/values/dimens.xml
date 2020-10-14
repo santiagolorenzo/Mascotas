@@ -9,5 +9,6 @@
     <dimen name="margen_texto">5dp</dimen>
     <dimen name="texto">20sp</dimen>
     <dimen name="margen_general">15dp</dimen>
+    <dimen name="boton">30dp</dimen>
 </resources>
 

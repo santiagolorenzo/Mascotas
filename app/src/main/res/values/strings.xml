@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Mascotas</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_acerca_de">Acerca de</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="text_view_acercaDeInformacion">Información del sistema</string>
+    <string name="text_view_acercaDeVersion">Versión: 1.0</string>
+    <string name="text_view_acercaDeDesarrollador">Santiago</string>
+    <string name="text_view_contacto">Formulario de contacto</string>
+    <string name="text_view_Mensaje">Envíanos un correo</string>
+    <string name="text__nombre">Nombre:</string>
+    <string name="text__correo">Correo:</string>
+    <string name="text__mensaje">Mensaje:</string>
+    <string name="button_text">Enviar</string>
+    <string name="text_cardView">LUCAS</string>
 </resources>

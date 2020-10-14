@@ -1,14 +1,14 @@
-package com.santiago.mascotas;
-import androidx.annotation.NonNull;
+package com.santiago.mascotas.layout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Toast;
+
+import com.santiago.mascotas.R;
+import com.santiago.mascotas.adapter.MascotaAdapter;
+import com.santiago.mascotas.pojo.Mascota;
 
 import java.util.ArrayList;
 
@@ -27,11 +27,11 @@ public class FavoritasActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         mascotasFavoritas = new ArrayList<Mascota>();
-        mascotasFavoritas.add(new Mascota("Lucas",100,R.drawable.mascota1));
-        mascotasFavoritas.add(new Mascota("Pepe",95,R.drawable.mascota2));
-        mascotasFavoritas.add(new Mascota("Toby",39,R.drawable.mascota2));
-        mascotasFavoritas.add(new Mascota("Scooby",88,R.drawable.mascota1));
-        mascotasFavoritas.add(new Mascota("Thor",96,R.drawable.mascota2));
+        mascotasFavoritas.add(new Mascota(R.drawable.mascota1,"Lucas"));
+        mascotasFavoritas.add(new Mascota(R.drawable.mascota2,"Pepe"));
+        mascotasFavoritas.add(new Mascota(R.drawable.mascota2,"Toby"));
+        mascotasFavoritas.add(new Mascota(R.drawable.mascota1,"Scooby"));
+        mascotasFavoritas.add(new Mascota(R.drawable.mascota2,"Thor"));
 
 
         rvMascotasFavoritas = findViewById(R.id.rvMacotasFavoritas);
@@ -39,7 +39,7 @@ public class FavoritasActivity extends AppCompatActivity {
         llm.setOrientation(RecyclerView.VERTICAL);
         rvMascotasFavoritas.setLayoutManager(llm);
 
-        MascotaAdapter mascotaAdapter = new MascotaAdapter(mascotasFavoritas);
+        MascotaAdapter mascotaAdapter = new MascotaAdapter(mascotasFavoritas, this);
         rvMascotasFavoritas.setAdapter(mascotaAdapter);
     }
 }

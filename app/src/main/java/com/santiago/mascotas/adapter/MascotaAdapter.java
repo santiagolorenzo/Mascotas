@@ -1,5 +1,6 @@
-package com.santiago.mascotas;
+package com.santiago.mascotas.adapter;
 
+import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,14 +10,19 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.santiago.mascotas.R;
+import com.santiago.mascotas.pojo.Mascota;
+
 import java.util.ArrayList;
 
 public class MascotaAdapter extends RecyclerView.Adapter<MascotaAdapter.MascotaViewHolder> {
 
     ArrayList<Mascota> mascotas;
+    Activity activity;
 
-    public MascotaAdapter(ArrayList<Mascota> mascotas) {
+    public MascotaAdapter(ArrayList<Mascota> mascotas, Activity activity) {
         this.mascotas = mascotas;
+        this.activity = activity;
     }
 
     @NonNull

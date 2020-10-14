@@ -1,12 +1,11 @@
-package com.santiago.mascotas;
+package com.santiago.mascotas.pojo;
 
 public class Mascota {
     String nombre;
     int rating;
     int foto;
-    public Mascota(String nombre, int raiting, int foto) {
+    public Mascota(int foto, String nombre) {
         this.nombre = nombre;
-        this.rating = raiting;
         this.foto = foto;
     }
 

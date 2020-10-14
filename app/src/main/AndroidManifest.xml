@@ -9,19 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FavoritasActivity"
-            android:parentActivityName=".MainActivity">
+        <activity android:name=".layout.FavoritasActivity"
+            android:parentActivityName=".layout.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"></meta-data>
+                android:value=".layout.MainActivity"></meta-data>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".layout.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.santiago.mascotas.layout.About"
+            android:parentActivityName="com.santiago.mascotas.layout.MainActivity"/>
+        <!--soporte 4.0 o menores-->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.santiago.mascotas.layout.MainActivity">
+        </meta-data>
+
+        <activity android:name="com.santiago.mascotas.layout.ContactoActivity"
+            android:parentActivityName="com.santiago.mascotas.layout.MainActivity"/>
+
+
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>
