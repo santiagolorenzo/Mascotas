@@ -55,24 +55,7 @@ public class MainActivity extends AppCompatActivity {
             setSupportActionBar(toolbar);
         }
 
-
-        /*mascotas = new ArrayList<Mascota>();
-        mascotas.add(new Mascota(R.drawable.mascota1,"Kiara"));
-        mascotas.add(new Mascota(R.drawable.mascota2,"Zeus"));
-        mascotas.add(new Mascota(R.drawable.mascota1,"Simon"));
-        mascotas.add(new Mascota(R.drawable.mascota2,"Nala"));
-        mascotas.add(new Mascota(R.drawable.mascota2,"Tomy"));
-        mascotas.add(new Mascota(R.drawable.mascota1,"Misy"));
-
-
-        rvMascotas = findViewById(R.id.rvMascotas);
-        LinearLayoutManager llm = new LinearLayoutManager(this);
-        llm.setOrientation(RecyclerView.VERTICAL);
-        rvMascotas.setLayoutManager(llm);
-
-        MascotaAdapter mascotaAdapter = new MascotaAdapter(mascotas);
-        rvMascotas.setAdapter(mascotaAdapter);
-
+        
         FloatingActionButton fab = findViewById(R.id.floatingActionButton);
 
         fab.setOnClickListener(new View.OnClickListener() {
@@ -81,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 //rvMascotas.scrollToPosition(0);
                 Toast.makeText(MainActivity.this, "Subir una foto", Toast.LENGTH_SHORT).show();
             }
-        });*/
+        });
 
     }
 
